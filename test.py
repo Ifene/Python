@@ -1,1 +1,1 @@
-print('Whatever')
+# practice with Python
