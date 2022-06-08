@@ -2,6 +2,10 @@
 
 # practice with numbers
 
+from re import X
+from typing import ValuesView
+
+
 def numtest1():
     print(1+1)
     print(2*2)
@@ -14,23 +18,53 @@ def numtest1():
 
 
 # Practicing store ideas
-long_sword = 50
 
-hand_axe = 10
+def store():
+    long_sword = 50
 
-total_purchase = long_sword + hand_axe
+    hand_axe = 10
 
-value_long_sword = f'{long_sword} Gold'
+    total_purchase = long_sword + hand_axe
 
-#value_long_sword = str(long_sword)+' Gold'
+    value_long_sword = f'{long_sword} Gold'
 
-print(total_purchase)
+    #value_long_sword = str(long_sword)+' Gold'
 
-print(value_long_sword)
+    print(total_purchase)
+
+    print(value_long_sword)
 
 
+# Intro to Input
 
-# Intro to strings and Indexing
+def Input():
+    input("What's your name?")
+
+    print("Hello " + input("What is your name?"))
+
+
+# Learning the len command and variables
+
+def Len():
+    print(len(input("What is your name? ")))
+    # Other way to do this
+    nam = input("What's your name? ")
+    print(len(nam))
+
+
+def vart():
+    a = input("a: ")
+    b = input("b: ")
+
+    z = a
+    v = b
+    a = v
+    b = z
+
+    a = print("a: " + a)
+    b = print("b: " + b)
+
+
 
 
 
