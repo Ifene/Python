@@ -2,9 +2,6 @@
 
 # practice with numbers
 
-from re import X
-from typing import ValuesView
-
 
 def numtest1():
     print(1+1)
@@ -65,6 +62,18 @@ def vart():
     b = print("b: " + b)
 
 
+# Tip Calculator
+
+def Calculator() :
+    print("Welcome to the tip calculator!")
+    bill = input("What was the total bill? ")
+    tip = input("How much tip would you like to give? 10, 12, or 15? ")
+    people = input("How many people to split the bill?")
+
+    tbill = float(bill) / float(people)
+    ttip = float(tip) / 100 + 1
+
+    tot = print(f'{round(tbill * ttip, 2): .2f}')
 
 
 
