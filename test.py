@@ -75,12 +75,16 @@ def Calculator() :
 
     tot = print(f'{round(tbill * ttip, 2): .2f}')
 
-
+# Modular learning. % sign is used here instead of division
 def Modular():
     number = int(input("Which number do you want to check? "))
     if number % 2 == 0:
      Even_Total = print("This is an even number.")
     else:
      Odd_Total = print("This is an odd number.")
+
+
+
+
 
 
