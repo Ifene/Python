@@ -84,6 +84,25 @@ def Modular():
      Odd_Total = print("This is an odd number.")
 
 
+# BMI Calculator
+def BCalc():
+    height = float(input("enter your height in m: "))
+    weight = float(input("enter your weight in kg: "))
+
+    BMI = int(weight / (height**2))
+
+    print(BMI)
+
+
+    if BMI <= 18.5:
+        print("You are slightly underweight.")
+    elif BMI <= 25:
+        print("You have a normal weight.")
+    elif BMI <= 30:
+        print("You are slightly overweight.")
+    elif BMI <= 35:
+        print("You are obese.")
+    else: print("You are clinically obese")
 
 
 
