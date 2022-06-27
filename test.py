@@ -102,5 +102,26 @@ def BCalc():
     else: print(f"Your BMI is {BMI}, You are clinically obese")
 
 
+# Leap Year Calculator
+def Leap_Year():
+    year = int(input("Which year do you want to check? "))
+
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                print('leap')
+            else:
+                print('not leap')
+        else:
+            print('leap year')
+    else:
+        print('not leap')
+
+
+
+Leap_Year()
+
+
+
 
 
