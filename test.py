@@ -164,7 +164,35 @@ def Pizza_Quiz():
     #     bill += 1
 
 
+def love_calculator():
+    print("Welcome to the Love Calculator!")
+    name1 = input("What is your name? \n")
+    name2 = input("What is their name? \n")
 
+    combined_string = name1 + name2
+    lower_combined_string = combined_string.lower()
+    t = lower_combined_string.count("t")
+    r = lower_combined_string.count("r")
+    u = lower_combined_string.count("u")
+    e = lower_combined_string.count("e")
+
+    true = t + r + u + e
+
+    l = lower_combined_string.count("l")
+    o = lower_combined_string.count("o")
+    v = lower_combined_string.count("v")
+    e = lower_combined_string.count("e")
+
+    love = l + o + v + e
+
+    Total = int(str(true) + str(love))
+
+    if Total < 10 or Total > 90:
+        print(f"Your score is {Total}, you go together like coke and mentos")
+    elif Total >= 40 and Total <=50:
+        print(f"Your score is {Total}, you are alright together.")
+    else:
+        print(f"Your score is {Total}")
 
 
 
