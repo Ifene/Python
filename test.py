@@ -195,7 +195,52 @@ def love_calculator():
         print(f"Your score is {Total}")
 
 
+def forest_game():
+    print('''
+    *******************************************************************************
+    |   [  | v':    :              |        |_,;c    
+    | ]    |/; |,   |              |   [  ( __,/     
+    |    ,-'/  ;\ ,<  _',\.-._,;   |      ] |    n   
+    |   -' /   _;';    '=_'-' ,)  ,\        |   ,;   
+    |  ]  / \,'__/--,_,-- 'mm'J -"_  ]       '-,+_   
+    |    /    / "''-.,;"---''--'"" \      ]   __  "-'
+    ;' [      / :    : _c           /         /  ",_,'
+    |      [ | v|  , '/             c c    \ |        
+    \    ]   |  \ /| :             |;|]   . \|        
+    [      /"--'/  |            c@  )    )/|        
+    \     ]    ,-"'<':               (    /^ |        
+    | ]       / :   '|             |  )      |        
+    | |   /  |  |    ;,-;,         |,)(     ]|        
+    |  \^ |  |  :  |\ ,'           \ /   [   |        
+    |  ?  /  \_ |  /|:              | , \    |        
+    |  | ('.   "--' |:,    ;        :\ /    [|        
+    |  ;\~)   _     \_) ',_|   ,    | ),  \_ :        
+    |   |/ [ /""-,_   '-'(    /.'   | \   |  '-_      
+    | [      |  |  "---,__"'=';=,_  |  \ /|\    '"-,__
+    |     ]  |  :    |    ""'^.\    |   | |    \      
+    |  [    ]|  |    :              | ]  \ \   /  _AsH
+    *******************************************************************************
+    ''')
+    print("Welcome to Angellusare, the Great Jungle of Paston.\nYou awake in a jungle on a cobble path heading north.")
+    print("Your mission is to survive and escape the jungle.") 
 
+    Begin = input('Do you "follow" the cobble path or "walk" into the jungle?\n').lower()
+    if Begin == "follow":
+        dir = input('As you travel the path ahead of you it splits into two ways. Do you go "left or "right" \n') .lower()
+        if dir == "left":
+            chest = input('Continuing down the path on your right side you come across 3 stone podiums with a chest on each one.\nEach chest is colored; which do you choose "red", "yellow", "blue", or "none" and keep walking.\n').lower()
+            if chest == "red":
+                print("You have chosen a fate worse than death. You are eaten alive by fire ants.\n")
+            elif chest == "yellow":
+                print("A beautiful flower that smells good enough to eat. You die to poison.\n")
+            elif chest == "blue":
+                print("You find many rations and a map out of the jungle. You continue down the path taking every twist and turn correctly until you reach the edge of the jungle. Out in front of you is nothing but a mass desert. You survived Angellusare and now freedom is just beyond the horizon. You win!\n")
+            else:
+                print("Deciding not to gamble fate is wise but when it determines your survival you wish you would've chosen a chest. You go a ways down the path to a river. The path ends at it with no other path on the opposite side. You cross the river but on the other side of it as you get out are moss covered skeletons that stab you through the chest and leave your body to run down the river.\n")
+        else:
+            print("A directional path leads you into a cave. In that cave as you walk through it you feel a piercing pain in your chest. Then you feel your body fluids being drained.\nIn a small light you see a giant spider has grabbed you and sank its fangs into your heart. You die.\n")
+    else:
+        print("You wandered off the path into the unknown jungle of Paston. You will never find your way out nor be found. You died of starvation.\n")
 
 
 
