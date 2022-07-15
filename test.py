@@ -243,4 +243,37 @@ def forest_game():
         print("You wandered off the path into the unknown jungle of Paston. You will never find your way out nor be found. You died of starvation.\n")
 
 
+def ran_function():
+    import random
+
+    Toss = random.randint(0,1)
+
+    if Toss == 0:
+        print("Heads")
+    else:
+        print("Tails")
+
+
+
+def list_random():
+    # Split string method
+    names_string = input("Give me everybody's names, separated by a comma. ")
+    names = names_string.split(", ")
+    # 🚨 Don't change the code above 👆
+
+    #Write your code below this line 👇
+
+    import random
+
+    total_number = len(names)
+    random_choice = random.ranint(0, total_number - 1)
+    person_pays = names[random_choice]
+    print(person_pays +"is going to buy the meal today.")
+
+
+    # person_pay = random.choice(names)
+
+
+
+
 
