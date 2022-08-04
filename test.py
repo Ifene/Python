@@ -338,21 +338,21 @@ def Rock_Paper_Scissors():
     else:
         print(game_images[players_choice])
     
-    npc_random_choice = random.randint(0, 2)
-    
-    print(f"Computer chose:")
-    print(game_images[npc_random_choice])
-    
-    if players_choice == 0 and npc_random_choice == 2:
-        print("You win!")
-    elif npc_random_choice == 0 and players_choice == 2:
-        print("You lose!")
-    elif npc_random_choice > players_choice:
-        print("You lose!")
-    elif players_choice > npc_random_choice:
-        print("You win!")
-    elif npc_random_choice == players_choice:
-        print("It's a draw!")
+        npc_random_choice = random.randint(0, 2)
+        
+        print(f"Computer chose:")
+        print(game_images[npc_random_choice])
+        
+        if players_choice == 0 and npc_random_choice == 2:
+            print("You win!")
+        elif npc_random_choice == 0 and players_choice == 2:
+            print("You lose!")
+        elif npc_random_choice > players_choice:
+            print("You lose!")
+        elif players_choice > npc_random_choice:
+            print("You win!")
+        elif npc_random_choice == players_choice:
+            print("It's a draw!")
 
 
 
