@@ -226,7 +226,7 @@ def forest_game():
 
     Begin = input('Do you "follow" the cobble path or "walk" into the jungle?\n').lower()
     if Begin == "follow":
-        dir = input('As you travel the path ahead of you it splits into two ways. Do you go "left or "right" \n') .lower()
+        dir = input('As you travel the path ahead of you it splits into two ways. Do you go "left" or "right" \n') .lower()
         if dir == "left":
             chest = input('Continuing down the path on your right side you come across 3 stone podiums with a chest on each one.\nEach chest is colored; which do you choose "red", "yellow", "blue", or "none" and keep walking.\n').lower()
             if chest == "red":
@@ -353,6 +353,35 @@ def Rock_Paper_Scissors():
             print("You win!")
         elif npc_random_choice == players_choice:
             print("It's a draw!")
+
+
+def A_Loop():
+    student_heights = input("Input a list of student heights ").split()
+    for n in range(0, len(student_heights)):
+        student_heights[n] = int(student_heights[n])
+    # 🚨 Don't change the code above 👆
+
+
+    #Write your code below this row 👇
+
+    total_height = 0
+    for height in student_heights:
+        total_height += height
+
+    A_height = round(int(total_height) / 7)
+
+    print(A_height)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
