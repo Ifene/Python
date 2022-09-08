@@ -362,19 +362,74 @@ def A_Loop():
     # 🚨 Don't change the code above 👆
 
 
-    #Write your code below this row 👇
-
+    # Total of all the heights together
     total_height = 0
     for height in student_heights:
         total_height += height
 
-    A_height = round(int(total_height) / 7)
+    # Total number of students to divide by
+    number_of_students = 0
+    for student in student_heights:
+        number_of_students += 1
 
+    A_height = round(total_height / number_of_students)
+    
     print(A_height)
 
 
 
+def For_Loop_Pract():
+    # 🚨 Don't change the code below 👇
+    student_scores = input("Input a list of student scores ").split()
+    for n in range(0, len(student_scores)):
+        student_scores[n] = int(student_scores[n])
+    print(student_scores)
+    # 🚨 Don't change the code above 👆
 
+    #Write your code below this row 👇
+
+    Largest_Score = 0
+
+    for Score in student_scores:
+        if Score > Largest_Score:
+            Largest_Score = Score
+
+    print(f'The highest score in the class is: {Largest_Score}')
+    #For Loop with Lists
+    fruits = ["Apple", "Peach", "Pear"]
+    for fruit in fruits:
+     print(fruit)
+     print(fruit + " Pie")
+
+    #For Loop with Range
+
+    for number in range(1, 100):
+     print(number)
+
+    for number in range(1, 101):
+     print(number)
+
+    for number in range(1, 11, 3):
+     print(number)
+
+    #Calculating the sum of all the numbers from 1 to 100.
+    total = 0
+    for number in range(1, 101):
+     total += number
+    print(total)
+
+
+def Fiz_Buzz():
+    F = 0
+    for F in range(1, 101):
+     if F % 5 == 0 and F % 3 == 0:
+        print("FizzBuzz")
+     elif F % 5 == 0:
+        print("Buzz")
+     elif F % 3 == 0:
+        print("Fizz")
+     else:
+        print(F)
 
 
 
