@@ -553,3 +553,5 @@ def Hangman():
             print("You win.")
 
         print(stages[lives])
+
+

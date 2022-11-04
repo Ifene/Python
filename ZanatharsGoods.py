@@ -74,7 +74,7 @@ players_choice = input(f'"Weapons" "Armor" "Drugs" "Supplies" "Tools"\n').lower(
 
 
 if players_choice == "weapons":
-    input(f'"Got quite a variety. Take a look" {Weapons}')
+    print(f'"Got quite a variety. Take a look." {random.choice(Weapons)}')
 elif players_choice == "armor":
     input(f'{Armor}')
 elif players_choice == "drugs":
