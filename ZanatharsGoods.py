@@ -102,6 +102,8 @@ Viol = ""
 Navigator_Tools = ""
 Thieves_Tools = ""
 
+#Drugs
+Sunkiss = ""
 
 Martial_Ranged_Weapons = [Blowgun, Hand_Crossbow, Heavy_Crossbow, Longbow, Net]
 Simple_Melee_Weapons = [Club, Dagger, Great_Club, Handaxe, Javelin, Light_Hammer, Mace, Quater_Staff, Sickle, Spear]
@@ -117,6 +119,7 @@ Cook_Utensils, Glassblowers_Tools, Jeweler_Tools, Leatherworker_Tools, Mason_Too
 Tinkering_Tools, Weavers_Tools, Woodcarver_Tools, Dice_Set, Cards, Bagpipes, Drum, Dulcimer, Flute, Lute, Lyre, Horn, Pan_Flute, Shawn, 
 Viol, Navigator_Tools, Thieves_Tools]
 
+drugs = [Sunkiss]
 
 # Items in Zanathars Goods by category
 Rsimple_melee = random.choice(Simple_Melee_Weapons)
@@ -130,12 +133,12 @@ Rheavy_armor = random.choice(Heavy_Armor)
 
 Rtools = random.choice(tools)
 
-Rdrugs = random.choice()
+Rdrugs = random.choice(drugs)
 
 Weapons = [Rsimple_melee, Rsimple_ranged, Rmartial_melee, Rmartial_ranged]
 Armor = [Rlight_armor, Rmedium_armor, Rheavy_armor]
 Tools = [Rtools]
-Drugs = []
+Drugs = [Rdrugs]
 Supplies = ("Explorer pack, Dungeon Pack, Monster Hunter pack, Chests, Barrels, Housewares, ect.")
 
 
@@ -151,19 +154,20 @@ starting_statement = print(f'Hello!\nWelcome to Zanathar\'s Goods, what are you 
 
 players_choice = input(f'Weapons, Armor, Drugs, Supplies, or Tools?\n').lower()
 
+Leaving_Lines = ["You've disrupted my work, please leave.", "I don't need your haggle right now, leave"]
 
 if players_choice == "weapons":
     print(f'"Got quite a variety in stock. Take a look." {Weapons}')
 elif players_choice == "armor":
-    input(f'{Armor}')
+    input(f'"Not the highest quality but its honest material" {Armor}')
 elif players_choice == "drugs":
-    input(f'{Drugs}')
+    input(f'"The good shits in the back, one moment" {Drugs}')
 elif players_choice == "supplies":
-    input(f'{Supplies}')
+    input(f'"Random adventurer stuff huh, let me see what I got" {Supplies}')
 elif players_choice == "tools":
-    input(f'{Tools}')
+    input(f'"Right tool for the right job, can never go wrong with that" {Tools}')
 else:
-    print("You've disrupted my work, please leave.")
+    print(random.choice(Leaving_Lines))
 
 
 
