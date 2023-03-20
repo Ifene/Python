@@ -1,4 +1,6 @@
 import random
+import time
+import os
 
 # Item Values
 
@@ -151,7 +153,6 @@ weapons_inventory = random.randint(0, 3)
 #     print("That item is out of stock, sorry for the inconvience.")
 
 starting_statement = print(f'Hello!\nWelcome to Zanathar\'s Goods, what are you looking for?')
-
 players_choice = input(f'Weapons, Armor, Drugs, Supplies, or Tools?\n').lower()
 
 Leaving_Lines = ["You've disrupted my work, please leave.", "I don't need your haggle right now, leave"]
