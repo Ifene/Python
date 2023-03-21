@@ -20,7 +20,7 @@ while cipher_fun is False:
 
 print(f"Here's the {cipher_direction}d result: {end_text}")
     
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
