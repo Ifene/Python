@@ -14,7 +14,7 @@ while Game == True:
     #D100
     D100 = random.randint(1, 100)
 
-    Roll1 = input("Do you want to roll a 'd20', 'd100', or 'Damage'? \n").lower()
+    Roll1 = input("Do you want to roll a 'd20', 'd100', or 'Damage'? (To end type 'end') \n").lower()
     os.system('cls')
 
     if Roll1 == 'd20':
@@ -137,10 +137,11 @@ while Game == True:
                     time.sleep(2.5)
                     os.system('cls')
                     
-            Dice_Amount = input("What sided dice do you need? 'd4' 'd6' 'd8' 'd10' 'd12' \n")
+            Dice_Amount = input("What sided dice are you using? 'd4' 'd6' 'd8' 'd10' 'd12' \n")
             os.system('cls')      
             Dmg_Dice(Dice=Dice_Amount)
             Another3 = input("Would you like to roll again? 'yes' or 'no' \n").lower()
+            os.system('cls')
             if Another3 == 'yes':
                 os.system('cls')
                 Dmg = True
@@ -151,6 +152,5 @@ while Game == True:
         os.system('cls')
         print("That's not a valid answer. Please enter one of the options.")
 else:
-    print("End of game")
+    print("End of Dice Roller")
     
-# Total_Dmg_Amount = {D4_Amount} + {D6_Amount} + {D8_Amount} + {D10_Amount} + {D12_Amount}
