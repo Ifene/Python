@@ -38,7 +38,7 @@ while Game == True:
         elif Advantage == 'no':
             os.system('cls')
             time.sleep(2.5)
-            print(D20)
+            print(f'Roll: {D20}')
             time.sleep(1.5)
             Another1 = input("Would you like to roll again? 'yes' or 'no' \n").lower()
             if Another1 == 'yes':
@@ -53,7 +53,7 @@ while Game == True:
     elif Roll1 == 'd100':
         os.system('cls')
         time.sleep(2.5)
-        print(D100)
+        print(f'Roll: {D100}')
         time.sleep(1.5)
         Another2 = input("Would you like to roll again? 'yes' or 'no' \n").lower()
         if Another2 == 'yes':
@@ -133,9 +133,8 @@ while Game == True:
 
                 else:
                     os.system('cls')
-                    print("Please enter a valid dice number.")
-                    time.sleep(2.5)
-                    os.system('cls')
+                    print("Please enter a valid dice number 'd4' 'd6' 'd8' 'd10' 'd12'")
+                    time.sleep(3)
                     
             Dice_Amount = input("What sided dice are you using? 'd4' 'd6' 'd8' 'd10' 'd12' \n")
             os.system('cls')      
@@ -147,7 +146,9 @@ while Game == True:
                 Dmg = True
             else:
                 Dmg = False
-        
+    
+    elif Roll1 == 'end': 
+        Game = False
     else: 
         os.system('cls')
         print("That's not a valid answer. Please enter one of the options.")

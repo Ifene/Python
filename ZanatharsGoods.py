@@ -107,10 +107,11 @@ Thieves_Tools = ""
 #Drugs
 Sunkiss = ""
 
-Martial_Ranged_Weapons = [Blowgun, Hand_Crossbow, Heavy_Crossbow, Longbow, Net]
+#Organizing categories
 Simple_Melee_Weapons = [Club, Dagger, Great_Club, Handaxe, Javelin, Light_Hammer, Mace, Quater_Staff, Sickle, Spear]
 Simple_Ranged_Weapons = [Light_Crossbow, Dart, Shortbow, Sling]
 Martial_Melee_Weapons = [Battle_Axe, Flail, Glaive, Greataxe, Great_Sword, Halberd, Lance, Long_Sword, Maul, Morning_Star, Pike, Rapier, Scimitar, Short_Sword, Trident, War_Pick, Warhammer, Whip]
+Martial_Ranged_Weapons = [Blowgun, Hand_Crossbow, Heavy_Crossbow, Longbow, Net]
 
 Light_Armor = [Padded, Leather, Studded_Leather]
 Medium_Armor = [Hide, Chain_Shirt, Scale_Mail, Breastplate, Half_Plate]
@@ -123,7 +124,7 @@ Viol, Navigator_Tools, Thieves_Tools]
 
 drugs = [Sunkiss]
 
-# Items in Zanathars Goods by category
+#Random items in Zanathars Goods by category
 Rsimple_melee = random.choice(Simple_Melee_Weapons)
 Rsimple_ranged = random.choice(Simple_Ranged_Weapons)
 Rmartial_melee = random.choice(Martial_Melee_Weapons)
@@ -146,8 +147,8 @@ Supplies = ("Explorer pack, Dungeon Pack, Monster Hunter pack, Chests, Barrels, 
 
 store_items = [Weapons, Armor, Tools, Drugs, Supplies]
 
-# Amount of Store Item in Inventory
-weapons_inventory = random.randint(0, 3)
+# Amount of Store Items in Inventory
+# weapons_inventory = random.randint(0, 3)
 
 # if store_item >= 0:
 #     print("That item is out of stock, sorry for the inconvience.")
